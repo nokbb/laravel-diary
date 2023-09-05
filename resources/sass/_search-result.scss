@@ -1,0 +1,52 @@
+/*=====================================================================
+# search-result
+===================================================================== */
+.search-result {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.search-result-container {
+  display: flex;
+  align-items: center;
+  flex: 0 0 78%;
+}
+
+.friend-icon {
+  flex: 0 0 50px;
+
+  img {
+    border: 1px solid #000;
+    border-radius: 100%;
+  }
+}
+
+.search-friend-name {
+  flex: 1;
+  margin: 0 .5rem;
+
+  p {
+    color: #000;
+  }
+}
+
+.search-addition-btn {
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin-left: auto;
+  flex: 0 0 auto;
+  background: #e8e8e8;
+  
+  button {
+    background: transparent;
+    min-width: 50px;
+    white-space: nowrap;
+    color: #000;
+  }
+}
+
+button.following {
+  background: #6fa8dc;
+  color: #fff;
+}

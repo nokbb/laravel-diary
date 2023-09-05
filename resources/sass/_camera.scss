@@ -1,0 +1,119 @@
+/*=====================================================================
+# camera
+===================================================================== */
+.close-camera-btn {
+  position: relative;
+  line-height: 3rem;
+}
+
+.close-camera {
+  border: none;
+  background: transparent;
+}
+
+.close-camera-icon {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -1;
+}
+
+#canvas {
+  position: relative;
+}
+
+#clear-canvas-btn {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  width: 25px;
+  height: 26px;
+  border-radius: 100%;
+}
+
+.text-container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+
+.textarea-wrap {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.auto_resize {
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.underline-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+}
+
+.addition-container {
+  display: none;
+  text-align: center;
+  padding: 1rem 0;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+.addition-lists {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2rem;
+}
+
+.addition-list {
+  font-size: 2rem;
+
+  input {
+    display: none;
+  }
+
+  label {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      background: #6fa8dc;
+    }
+  }
+}
+
+input[type="radio"]:checked + label {
+  background: #6fa8dc;
+  color: #fff;
+}
+
+.addition-btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

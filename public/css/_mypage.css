@@ -1,0 +1,159 @@
+/*=====================================================================
+# mypage
+===================================================================== */
+.login-menu {
+  border-bottom: 1px solid #000;
+}
+
+.login-menu,
+.signup-menu {
+  position: relative;
+  display: block;
+  padding: 5px 0;
+}
+
+.menu-text {
+  padding-right: 1rem;
+  color: #000;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #000;
+}
+
+.myPage {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+}
+
+.myPage-img {
+  margin-top: 1rem;
+}
+.myPage-img img {
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+
+.myName {
+  margin-top: 0.5rem;
+}
+
+.tab-area {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.tab {
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px solid #000;
+}
+
+.tab.active {
+  border-color: #6299e6;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+
+.private {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.lock,
+.lock1,
+.lock2 {
+  display: none;
+}
+
+.lock-btn {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #dddddd;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-left: 10px;
+}
+.toggle-button input {
+  display: none;
+}
+.toggle-button input:checked + .slider {
+  background-color: #4bd865;
+}
+.toggle-button input:checked + .slider::after {
+  left: 30px;
+}
+.toggle-button .slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.toggle-button .slider::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  content: "";
+  transition: left 0.4s;
+}
+
+.memories-container {
+  margin-top: 1rem;
+}
+
+.memories {
+  width: 100%;
+  border-spacing: 5px 5px;
+}
+
+.day td {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 1rem 0;
+  text-align: center;
+  width: 14.2857142857%;
+}
+
+.seeAll-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.seeAll-btn {
+  border: 2px solid #888888;
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+}

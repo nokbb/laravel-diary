@@ -1,0 +1,78 @@
+/*=====================================================================
+# main
+===================================================================== */
+.inner {
+  padding: 0 1rem;
+}
+
+.header {
+  padding: 0 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.header-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3rem;
+}
+
+.header-list {
+
+  a {
+    color: inherit;
+    font-size: 1.5rem;
+  }
+}
+
+.my-diary {
+
+}
+
+.friend-diary {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  display: block;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+
+  time {
+    font-size: 12px;
+  }
+}
+
+.user-icon {
+  margin-right: 1rem;
+}
+
+.user-name {
+  margin-right: 1rem;
+}
+
+.diary-img {
+  margin-top: .5rem;
+  outline: 1px solid #000;
+  border-radius: 5%;
+  height: 336px;
+}
+
+.diary-caption {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.camera-btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#camera-action-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}

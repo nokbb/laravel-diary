@@ -1,0 +1,63 @@
+/*=====================================================================
+# friend
+===================================================================== */
+.friend-profile {
+  position: relative;
+  z-index: 0;
+}
+
+.friend-img {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #000;
+  box-shadow: inset 0px 0px 30px 10px #ccc;
+
+  img {
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.friend-name-container {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.friend-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.friend-btn-container {
+  text-align: center;
+
+  button {
+    padding: 1rem 2rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+
+.friend-container {
+  display: flex;
+  margin-top: 1rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.friend-container-img {
+  flex: 0 0 50%;
+  outline: 1px solid #000;
+  border-radius: 8px;
+  margin: .5rem;
+}
+
+.friend-container-text {
+  flex: 1;
+  margin-top: 0.5rem;
+
+  p {
+    color: #000;
+  }
+}
