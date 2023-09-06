@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\LoginFormRequest;
 
 class LoginController extends Controller
 {
@@ -13,7 +14,17 @@ class LoginController extends Controller
      */
     public function showLogin()
     {
-        return view('diary.login');
+        return view('login.login');
+    }
+
+    /**
+     * ログイン
+     * 
+     * @param App\Http\Requests\LoginFormRequest $request
+     */
+    public function login(LoginFormRequest $request)
+    {
+        dd($request->all());
     }
 
     /**

@@ -29,7 +29,10 @@ Route::get('scss', function () {
 });
 
 // Route::get('/', 'LoginController@showLogin')->name('login'); //この行は消す
-Route::get('/', [LoginController::class, 'showLogin'])->name('login'); //この書き方で
+Route::get('/', [LoginController::class, 'showLogin'])->name('showLogin'); //この書き方で
+
+Route::post('login', [LoginController::class, 'login'])->name('login');
+
 
 Route::get('/signup', [LoginController::class, 'showSignup'])->name('signup');
 

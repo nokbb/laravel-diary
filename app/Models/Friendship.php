@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Models\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category_privacy_setting extends Model
+class Friendship extends Model
 {
     use HasFactory;
     //テーブル名
-    protected $table = 'category_privacy_settings';
+    protected $table = 'friendships';
 
     //可変項目
     protected $fillable =
     [
-        'category_id',
         'user_id',
-        'privacy_setting',
+        'friend_id',
+        'status',
         'created_at',
         'updated_at'
     ];
