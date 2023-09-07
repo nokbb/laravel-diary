@@ -14,6 +14,15 @@
   </ul>
 </header>
 <div class="inner">
+    <x-alert type="success" :session="session('success')"/>
+    <ul>
+      <li>
+        名前：{{ Auth::user()->name }}
+      </li>
+      <li>
+        メールアドレス：{{ Auth::user()->email }}
+      </li>
+    </ul>
   <main>
     <div class="my-diary"></div>
     <a class="friend-diary">

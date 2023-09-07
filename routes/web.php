@@ -28,14 +28,28 @@ Route::get('scss', function () {
   return view('camera');
 });
 
-// Route::get('/', 'LoginController@showLogin')->name('login'); //この行は消す
-Route::get('/', [LoginController::class, 'showLogin'])->name('showLogin'); //この書き方で
 
-Route::post('login', [LoginController::class, 'login'])->name('login');
+//ログイン前でなければ入れない
+Route::middleware(['guest'])->group(function () {
+  //ログイン画面
+  Route::get('/', [LoginController::class, 'showLogin'])->name('showLogin');
+  //ログイン処理
+  Route::post('login', [LoginController::class, 'login'])->name('login');
+});
 
 
 Route::get('/signup', [LoginController::class, 'showSignup'])->name('signup');
 
-Route::get('/main', [DiaryController::class, 'showMain'])->name('main');
+//ログイン後でなければ入れない
+Route::middleware(['auth'])->group(function () {
+  //ログアウト
+  Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+});
+
+//ホーム画面
+Route::get('/home', [DiaryController::class, 'showHome'])->name('home');
 
 Route::get('/camera', [DiaryController::class, 'showCamera'])->name('camera');
+
+//マイページ
+Route::get('/mypage', [DiaryController::class, 'showMypage'])->name('mypage');

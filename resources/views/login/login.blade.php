@@ -5,15 +5,14 @@
     @csrf
     <fieldset>
       <legend class="login-head">Login</legend>
-      @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-      @endif
+      @foreach ($errors->all() as $error)
+        <ul class="alert alert-danger">
+          <li>{{ $error }}</li>
+        </ul>
+      @endforeach
+
+      <x-alert type="danger" :session="session('danger')"/>
+
       <div class="input">
         <input type="email" name="email" placeholder="Email" required />
         <span class="fade"><i class="fa-solid fa-envelope"></i></span>
