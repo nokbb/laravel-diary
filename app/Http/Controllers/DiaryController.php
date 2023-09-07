@@ -8,13 +8,13 @@ class DiaryController extends Controller
 {
     //
     /**
-     * メイン画面を表示する
+     * ホーム画面を表示する
      * 
      * @return view
      */
-    public function showMain()
+    public function showHome()
     {
-        return view('diary.main');
+        return view('diary.home');
     }
 
     //
@@ -26,5 +26,16 @@ class DiaryController extends Controller
     public function showCamera()
     {
         return view('diary.camera');
+    }
+
+    //
+    /**
+     * マイページ画面を表示する
+     * 
+     * @return view
+     */
+    public function showMypage()
+    {
+        return view('diary.mypage');
     }
 }

@@ -1,21 +1,22 @@
 <?php
 
-namespace App\Models\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Password_reset extends Model
+class Category extends Model
 {
     use HasFactory;
     //テーブル名
-    protected $table = 'password_resets';
+    protected $table = 'categories';
+    //timestampsの自動生成をオフ
+    public $timestamps = false;
 
     //可変項目
     protected $fillable =
     [
-        'email',
-        'token',
-        'created_at'
+        'name',
+        'icon'
     ];
 }

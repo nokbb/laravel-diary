@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Models\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Password_reset extends Model
 {
     use HasFactory;
     //テーブル名
-    protected $table = 'posts';
+    protected $table = 'password_resets';
 
     //可変項目
     protected $fillable =
     [
-        'user_id',
-        'created_at',
-        'updated_at'
+        'email',
+        'token',
+        'created_at'
     ];
 }

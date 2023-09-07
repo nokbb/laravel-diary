@@ -1,22 +1,23 @@
 <?php
 
-namespace App\Models\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Friendship extends Model
+class Memory extends Model
 {
     use HasFactory;
     //テーブル名
-    protected $table = 'friendships';
+    protected $table = 'memories';
 
     //可変項目
     protected $fillable =
     [
-        'user_id',
-        'friend_id',
-        'status',
+        'post_id',
+        'file_path',
+        'caption',
+        'entry',
         'created_at',
         'updated_at'
     ];
