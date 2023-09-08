@@ -26,7 +26,7 @@
         <button type="submit" class="login-btn">ログイン</button>
         <a href="" class="password-forget">パスワードをお忘れの方</a>
       </div>
-      <a href="" class="newAccount-btn">新規登録</a>
+      <a href="{{ route('register') }}" class="newAccount-btn">新規登録</a>
       <a href="" class="no-login">ログインせずに使う</a>
     </fieldset>
   </form>

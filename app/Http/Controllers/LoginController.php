@@ -85,14 +85,4 @@ class LoginController extends Controller
 
         return redirect()->route('showLogin')->with('danger', 'ログアウトしました！');
     }
-
-    /**
-     * サインアップ画面を表示する
-     * 
-     * @return view
-     */
-    public function showSignup()
-    {
-        return view('diary.signup');
-    }
 }

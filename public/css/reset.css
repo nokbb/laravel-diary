@@ -34,7 +34,8 @@ td,
 small,
 button,
 time,
-figure {
+figure,
+form {
   border: 0;
   font: inherit;
   font-size: 100%;

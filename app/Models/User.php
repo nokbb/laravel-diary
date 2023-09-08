@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Facades\Hash;
 
 class User extends Authenticatable
 {
@@ -48,6 +49,16 @@ class User extends Authenticatable
     ];
 
     /**
+     * 新規登録
+     * 
+     */
+    public static function registerUser(array $data): User {
+        return self::create([
+            'name' => $data['name'],
+            'username' => $data['username'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+        ]);
      * Emailがマッチしたユーザーを返す
      * @param string $email
      * @return object

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController; //この行を追加
 use App\Http\Controllers\DiaryController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,10 +36,13 @@ Route::middleware(['guest'])->group(function () {
   Route::get('/', [LoginController::class, 'showLogin'])->name('showLogin');
   //ログイン処理
   Route::post('login', [LoginController::class, 'login'])->name('login');
+
+  //新規登録画面
+  Route::get('/register', [UserController::class, 'showRegister'])->name('showRegister');
+  //新規登録処理
+  Route::post('register', [UserController::class, 'register'])->name('register');
 });
 
-
-Route::get('/signup', [LoginController::class, 'showSignup'])->name('signup');
 
 //ログイン後でなければ入れない
 Route::middleware(['auth'])->group(function () {
