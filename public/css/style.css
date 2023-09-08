@@ -126,6 +126,15 @@ span.eye {
   font-size: 12px;
 }
 
+.alert {
+  width: 90%;
+  margin: 15px auto;
+  background: #ffdcdc;
+  color: #000;
+  border-radius: 4px;
+  padding: 2px 10px;
+}
+
 /*=====================================================================
 # signup
 ===================================================================== */
@@ -357,6 +366,7 @@ input[type=radio]:checked + label {
 
 .myPage-img {
   margin-top: 1rem;
+  height: 100px;
 }
 .myPage-img img {
   border: 1px solid #000;
