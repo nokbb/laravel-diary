@@ -59,6 +59,9 @@ class User extends Authenticatable
             'email' => $data['email'],
             'password' => Hash::make($data['password'])
         ]);
+    }
+    
+    /**
      * Emailがマッチしたユーザーを返す
      * @param string $email
      * @return object
