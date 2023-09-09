@@ -62,7 +62,7 @@ class User extends Authenticatable
     }
     
     /**
-     * Emailがマッチしたユーザーを返す
+     *  Emailがマッチしたユーザーを返す
      * @param string $email
      * @return object
      */
